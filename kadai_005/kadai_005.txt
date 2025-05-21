@@ -1,0 +1,23 @@
+$ git init
+Initialized empty Git repository in ...
+
+$ echo Hello, world! > kadai_005/hello_world.txt
+
+$ git add kadai_005/hello_world.txt
+
+$ git commit -m "1回目のコミット：hello_world.txt に 'Hello, world!' を追加"
+[main (root-commit) a1b2c3d] 1回目のコミット：hello_world.txt に 'Hello, world!' を追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 kadai_005/hello_world.txt
+
+$ echo こんにちは、世界！ >> kadai_005/hello_world.txt
+
+$ git add kadai_005/hello_world.txt
+
+$ git commit -m "2回目のコミット：hello_world.txt に 'こんにちは、世界！' を追記"
+[main d4e5f6g] 2回目のコミット：hello_world.txt に 'こんにちは、世界！' を追記
+ 1 file changed, 1 insertion(+)
+
+$ git log --oneline
+f8545a8 2回目のコミット：hello_world.txt に 'こんにちは、世界！' を追記
+453d110 1回目のコミット：hello_world.txt に 'Hello, world!' を追加
